@@ -1,22 +1,15 @@
 import React from 'react'
-import { format } from '../lib/dateformat';
 
-const Match = ({ data }) => {
-    const headline = (parseInt(data.hjemmehold.id) === 76)
-        ? `Hjemme mod ${data.udehold.navn}`
-        : `Ude mod ${data.hjemmehold.navn}`;
-
-    return (
+const Match = ({ data }) => (
         <>
-        <dt>{headline}</dt>
+        <dt>{data.headline}</dt>
         <dd>
-            <span className="createdby">{data.turnering.navn}</span>
+            <span className="createdby">{data.tournamentName}</span>
             <br/>
-            {format(data.dato, data.tidspunkt)}
+            {data.matchTime}
             <br/>
-            {data.tvkanaler[0].navn}
+            {data.tvChannel}
         </dd>
-        </>)
-}
+        </>);
 
 export default Match;
