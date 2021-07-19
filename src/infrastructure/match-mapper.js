@@ -15,4 +15,4 @@ const makeDTO = (item) => {
     });
 }
 
-export const matchMapper = matches => matches.map(item => makeDTO(item));
+export const makeMatchMapper = maxItems => matches => matches.slice(0, maxItems || 3).map(item => makeDTO(item));
