@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="sofabold"></div>
+  <div id="nextMatch"></div>
 
   <noscript>
     You need to enable JavaScript to run this app.
@@ -19,7 +20,11 @@
   <script>
     ReactDOM.render(
       React.createElement(Madridista.Sofabold, { dataUrl: 'data.json', maxItems: 2 }),
-      document.getElementById('root'));
+      document.getElementById('sofabold'));
+
+    ReactDOM.render(
+      React.createElement(Madridista.NextMatch, { dataUrl: 'matchdata.json' }),
+      document.getElementById('nextMatch'));
   </script>
 </body>
 
