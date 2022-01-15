@@ -21,9 +21,10 @@ module.exports = {
         "react-dom": "ReactDOM"
     },
     devServer: {
-        contentBase: path.join(__dirname, "public/"),
+        static: {
+            directory: path.join(__dirname, "public/")
+        },
         port: 3000,
-        open: true,
-        publicPath: "http://localhost:3000/"
+        compress: true,
     }
 };
