@@ -4,20 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sofabold</title>
+  <title>Madridista components</title>
 </head>
 
 <body>
   <div id="root"></div>
+
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
   <script src="react.production.min.js" crossorigin></script>
   <script src="react-dom.production.min.js" crossorigin></script>
-  <script src="sofabold.js"></script>
+  <script src="madridista.js"></script>
   <script>
     ReactDOM.render(
-      React.createElement(Sofabold.default, { dataUrl: 'data.json', maxItems: 2 }),
+      React.createElement(Madridista.Sofabold, { dataUrl: 'data.json', maxItems: 2 }),
       document.getElementById('root'));
   </script>
 </body>

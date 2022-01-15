@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
     output: {
-        filename: 'sofabold.js',
+        filename: 'madridista.js',
         libraryTarget: 'umd',
-        library: 'Sofabold'
+        library: 'Madridista'
     },
     module: {
         rules: [

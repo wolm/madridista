@@ -1,4 +1,4 @@
-import { format } from '../lib/dateformat';
+import { format } from '../../lib/dateformat';
 
 const headline = (item) => 
     (parseInt(item.hjemmehold.id) === 76)
