@@ -6,8 +6,8 @@ export const format = (dateString, timeString) => {
 
     return `${
         days[date.getDay()]}, ${
-        date.getDate()}.${
-        date.getMonth() + 1}. ${
+        date.getDate()}/${
+        pad2(date.getMonth() + 1)} ${
         date.getHours()}:${
         pad2(date.getMinutes())}`;
 }
